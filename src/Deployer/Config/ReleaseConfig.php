@@ -7,8 +7,6 @@
 
 namespace N98\Deployer\Config;
 
-use Deployer\Task\Context as TaskContext;
-use N98\Deployer\Service\GetReleasesListService;
 use N98\Deployer\Service\GetReleasesNameService;
 
 /**
@@ -25,7 +23,6 @@ class ReleaseConfig
         \Deployer\set('shared_path_app', function () { return ReleaseConfig::getSharedPathAppDir(); });
 
         \Deployer\set('release_name', function () { return GetReleasesNameService::execute(); });
-        \Deployer\set('releases_list', function () { return GetReleasesListService::execute(); });
     }
 
     /**
@@ -45,8 +42,6 @@ class ReleaseConfig
     }
 
     /**
-     * Get AppDir
-     *
      * @return string
      */
     public static function getAppDir()
@@ -67,15 +62,5 @@ class ReleaseConfig
         }
 
         return $appPath;
-    }
-
-    /**
-     * Set the Release List Proxy to Env in case the next call should read the releases from scratch
-     */
-    public static function setReleaseListProxyToEnv()
-    {
-        // Reset so it will be loaded
-        $env = TaskContext::get()->getEnvironment();
-        $env->set('releases_list', function () { return ReleaseConfig::getReleasesList(); });
     }
 }
