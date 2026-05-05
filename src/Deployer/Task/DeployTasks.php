@@ -93,7 +93,7 @@ class DeployTasks extends TaskAbstract
             }
         }
 
-        if (\Deployer\isVerbose()) {
+        if (\Deployer\output()->isVerbose()) {
             \Deployer\writeln("Rollback to `{$releaseDir}` release was successful.");
         }
     }
@@ -136,7 +136,7 @@ class DeployTasks extends TaskAbstract
             }
             \Deployer\set('release_path_stable', $releasePathStable);
         }
-        if (\Deployer\isVerbose()) {
+        if (\Deployer\output()->isVerbose()) {
             \Deployer\writeln("release_path_stable = '{$releasePathStable}'");
         }
     }
