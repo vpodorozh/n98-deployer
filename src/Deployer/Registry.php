@@ -44,8 +44,9 @@ class Registry
         \Deployer\desc($desc);
         $task = \Deployer\task($code, $body);
 
-        if (is_array($roles)) {
-            $task->onRoles(...$roles);
+        if (is_array($roles) && count($roles) > 0) {
+            $selector = implode(',', array_map(fn(string $role) => "role=$role", $roles));
+            $task->select($selector);
         }
 
         return $task;
