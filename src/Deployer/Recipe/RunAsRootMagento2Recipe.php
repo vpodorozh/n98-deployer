@@ -31,8 +31,8 @@ class RunAsRootMagento2Recipe extends Magento2Recipe
 
         $writeDirs = [
             "{{app_dir}}var",
-            "{{app_dir}}pub/static'",
-            "{{app_dir}}pub/media'",
+            "{{app_dir}}pub/static",
+            "{{app_dir}}pub/media",
         ];
         \Deployer\set('writable_dirs', $writeDirs);
 

@@ -9,7 +9,6 @@ namespace RunAsRoot\Deployer\Recipe;
 
 use RunAsRoot\Deployer\Config\ReleaseConfig;
 use RunAsRoot\Deployer\Task\BuildTasks;
-use RunAsRoot\Deployer\Task\CleanupTasks;
 use RunAsRoot\Deployer\Task\DeployTasks;
 use RunAsRoot\Deployer\Task\MagentoTasks;
 use RunAsRoot\Deployer\Task\SystemTasks;
