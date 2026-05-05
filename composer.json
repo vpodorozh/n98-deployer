@@ -1,6 +1,6 @@
 {
     "name": "run-as-root/run-as-root-deployer",
-    "description": "netz98 deployer tasks, recipes, configuration",
+    "description": "Deployer recipes, tasks, and configuration for Magento 2 deployments. Fork of netz98/n98-deployer.",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -9,6 +9,9 @@
             "email": "m.walter@netz98.de"
         }
     ],
+    "support": {
+        "source": "https://github.com/netz98/n98-deployer"
+    },
     "require": {
         "php": ">=8.1",
         "deployer/deployer": "^8.0"

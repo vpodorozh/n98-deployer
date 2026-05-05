@@ -2,7 +2,7 @@
 
 Deployer recipes, tasks, and configuration for Magento 2 deployments.
 
-Forked from [netz98/n98-deployer](https://github.com/netz98/n98-deployer).
+> Fork of [netz98/n98-deployer](https://github.com/netz98/n98-deployer) — updated for Deployer v8 and PHP 8.4, repackaged under the `run-as-root` vendor.
 
 ## Requirements
 
