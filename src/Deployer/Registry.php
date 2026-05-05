@@ -26,7 +26,7 @@ class Registry
         }
     }
 
-    public static function task($code, $desc, \Closure $body, array $roles = null)
+    public static function task($code, $desc, \Closure $body, ?array $roles = null)
     {
         return self::registerTask($code, $desc, $body, $roles);
     }
@@ -35,11 +35,11 @@ class Registry
      * @param string $code
      * @param string $desc
      * @param \Closure $body
-     * @param array $roles
+     * @param array|null $roles
      *
      * @return \Deployer\Task\Task
      */
-    public static function registerTask($code, $desc, \Closure $body, array $roles = null)
+    public static function registerTask($code, $desc, \Closure $body, ?array $roles = null)
     {
         \Deployer\desc($desc);
         $task = \Deployer\task($code, $body);
