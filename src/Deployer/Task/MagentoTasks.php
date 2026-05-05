@@ -123,9 +123,10 @@ class MagentoTasks extends TaskAbstract
     public static function runSetupUpgrade()
     {
         \Deployer\cd('{{release_path_app}}');
-        \Deployer\run(\Deployer\get('php_bin') . ' bin/magento setup:upgrade --no-interaction --keep-generated', [
-            'timeout' => \Deployer\get('magento_setup_upgrade_timeout', 300),
-        ]);
+        \Deployer\run(
+            \Deployer\get('php_bin') . ' bin/magento setup:upgrade --no-interaction --keep-generated',
+            timeout: \Deployer\get('magento_setup_upgrade_timeout', 300),
+        );
     }
 
     /**
@@ -155,7 +156,7 @@ class MagentoTasks extends TaskAbstract
     {
         $env = \Deployer\get('config_store_env');
         if (empty($env)) {
-            $env = \Deployer\input()->getArgument('stage');
+            $env = \Deployer\currentHost()->getAlias();
         }
 
         $dir = \Deployer\get('config_store_dir');
