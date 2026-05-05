@@ -39,8 +39,8 @@ class Magento2Recipe
 
         $writeDirs = [
             "var",
-            "pub/static'",
-            "pub/media'",
+            "pub/static",
+            "pub/media",
         ];
         \Deployer\set('writable_dirs', $writeDirs);
 
