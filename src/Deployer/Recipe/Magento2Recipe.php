@@ -5,14 +5,14 @@
  * @see LICENSE
  */
 
-namespace N98\Deployer\Recipe;
+namespace RunAsRoot\Deployer\Recipe;
 
-use N98\Deployer\Config\ReleaseConfig;
-use N98\Deployer\Task\BuildTasks;
-use N98\Deployer\Task\CleanupTasks;
-use N98\Deployer\Task\DeployTasks;
-use N98\Deployer\Task\MagentoTasks;
-use N98\Deployer\Task\SystemTasks;
+use RunAsRoot\Deployer\Config\ReleaseConfig;
+use RunAsRoot\Deployer\Task\BuildTasks;
+use RunAsRoot\Deployer\Task\CleanupTasks;
+use RunAsRoot\Deployer\Task\DeployTasks;
+use RunAsRoot\Deployer\Task\MagentoTasks;
+use RunAsRoot\Deployer\Task\SystemTasks;
 
 /**
  * Magento2DeployFile

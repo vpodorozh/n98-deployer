@@ -5,7 +5,7 @@
  * @see LICENSE
  */
 
-namespace N98\Deployer\Service;
+namespace RunAsRoot\Deployer\Service;
 
 /**
  * GetReleasesNameService

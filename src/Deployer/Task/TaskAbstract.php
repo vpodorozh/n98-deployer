@@ -5,7 +5,7 @@
  * @see LICENSE
  */
 
-namespace N98\Deployer\Task;
+namespace RunAsRoot\Deployer\Task;
 
 /**
  * TaskAbstract

@@ -5,12 +5,9 @@
  * @see LICENSE
  */
 
-namespace N98\Deployer\Recipe;
+namespace RunAsRoot\Deployer\Recipe;
 
-/**
- * N98Magento2DeployFile
- */
-class N98Magento2Recipe extends Magento2Recipe
+class RunAsRootMagento2Recipe extends Magento2Recipe
 {
     public static function configuration()
     {

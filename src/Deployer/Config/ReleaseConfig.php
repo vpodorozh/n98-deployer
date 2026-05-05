@@ -5,9 +5,9 @@
  * @see LICENSE
  */
 
-namespace N98\Deployer\Config;
+namespace RunAsRoot\Deployer\Config;
 
-use N98\Deployer\Service\GetReleasesNameService;
+use RunAsRoot\Deployer\Service\GetReleasesNameService;
 
 /**
  * ReleaseConfig

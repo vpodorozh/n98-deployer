@@ -5,9 +5,9 @@
  * @see LICENSE
  */
 
-namespace N98\Deployer\Task;
+namespace RunAsRoot\Deployer\Task;
 
-use N98\Deployer\Registry as Deployer;
+use RunAsRoot\Deployer\Registry as Deployer;
 
 /**
  * BuildTasks
