@@ -48,8 +48,6 @@ class DeployTasks extends TaskAbstract
      */
     public static function initialize()
     {
-        \Deployer\Deployer::addDefault('readlink_bin', ['readlink']);
-
         self::initStableRelease();
         self::initReleaseName();
     }

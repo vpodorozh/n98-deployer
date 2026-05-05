@@ -22,6 +22,7 @@ class Magento2Recipe
     public static function configuration()
     {
         \Deployer\set('app_dir', '');
+        \Deployer\set('readlink_bin', 'readlink');
 
         $sharedFiles = [
             'app/etc/env.php',
